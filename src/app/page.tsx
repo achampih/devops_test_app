@@ -5,7 +5,7 @@ type User = {
 };
 
 export default async function Home() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/user");
   /* const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   if (!apiUrl) {
