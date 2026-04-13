@@ -5,14 +5,14 @@ type User = {
 };
 
 export default async function Home() {
-  //const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  /* const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   if (!apiUrl) {
     throw new Error(" process.env.NEXT_PUBLIC_API_URL, nihct gesetzt");
-  }
+  } */
 
-  const res = await fetch(apiUrl);
+  //const res = await fetch(apiUrl);
 
   if (!res.ok) {
     throw new Error("Fehler beim Laden der Daten");
