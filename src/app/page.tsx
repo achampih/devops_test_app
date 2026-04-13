@@ -5,7 +5,7 @@ type User = {
 };
 
 export default async function Home() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/user");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   /* const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   if (!apiUrl) {
@@ -26,9 +26,7 @@ export default async function Home() {
         <p>
           Umgebung: <strong>{process.env.NODE_ENV}</strong>
         </p>
-        <p>
-          API-Status: <span style={{ color: "green" }}>Verbunden</span>
-        </p>
+
         <ul className="flex items-start flex-col gap-2">
           {users.map((u) => (
             <li key={u.id} className="text-xl  text-slate-600">
